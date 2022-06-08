@@ -1,0 +1,40 @@
+{
+  "name": "react-twitter-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "icon": "svgr icons --out-dir components/icons --icon --replace-attr-values \"#000=currentColor\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "next": "^12.1.6",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@storybook/addon-actions": "^6.5.7",
+    "@storybook/addon-essentials": "^6.5.7",
+    "@storybook/addon-interactions": "^6.5.7",
+    "@storybook/addon-links": "^6.5.7",
+    "@storybook/builder-webpack5": "^6.5.7",
+    "@storybook/manager-webpack5": "^6.5.7",
+    "@storybook/react": "^6.5.7",
+    "@storybook/testing-library": "^0.0.11",
+    "@svgr/cli": "^6.2.1",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "postcss-loader": "^7.0.0",
+    "postcss-nested": "^5.0.6",
+    "style-loader": "^3.3.1"
+  }
+}

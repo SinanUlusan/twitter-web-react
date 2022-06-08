@@ -1,0 +1,8 @@
+.icons {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 20px;
+  padding: 20px !important;
+  font-size: 40px;
+  color: white;
+}
