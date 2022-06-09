@@ -1,11 +1,21 @@
 import React from "react";
-import Button from '../components/button'
+import Layout from "../components/layout";
+import Sidebar from "../components/col-sidebar";
+import Main from "../components/col-main";
+import Extra from "../components/col-extra";
+import useWindowSize from "../hooks/useWindowSize";
+import CONST from "../constants";
 
 function HomePage() {
-    return <div>
-            <h1>Hello next.js</h1>
-            <Button>Merhaba Next</Button>
-        </div>
+  const size = useWindowSize();
+
+  return (
+    <Layout>
+      <Sidebar flat={size.width < CONST.DESKTOP_SIZE}>sidebar</Sidebar>
+      <Main>{JSON.stringify(size)}</Main>
+      {size.width > CONST.TABLET_SIZE && <Extra>extra</Extra>}
+    </Layout>
+  );
 }
 
-export default HomePage
+export default HomePage;

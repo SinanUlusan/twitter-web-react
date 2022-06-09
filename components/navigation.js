@@ -1,6 +1,6 @@
 import React from "react";
 import NavButton from "./navigation-button";
-import TitleBold from "./title-bold";
+import TextTitle from "./text-title";
 import styles from "./navigation.module.css";
 import {
   Bookmark,
@@ -14,7 +14,7 @@ import {
   Twitter,
 } from "./icons";
 
-function Navigation({ selectedKey }) {
+function Navigation({ flat = false, selectedKey }) {
   return (
     <nav className={styles.nav}>
       <NavButton>
@@ -22,35 +22,35 @@ function Navigation({ selectedKey }) {
       </NavButton>
 
       <NavButton selected={selectedKey === "home"}>
-        <Home /> <TitleBold>Home</TitleBold>
+        <Home /> <TextTitle>Home</TextTitle>
       </NavButton>
 
       <NavButton selected={selectedKey === "explore"}>
-        <Explore /> <TitleBold>Explore</TitleBold>
+        <Explore /> <TextTitle>Explore</TextTitle>
       </NavButton>
 
       <NavButton notify={17} selected={selectedKey === "notification"}>
-        <Notification /> <TitleBold>Notification</TitleBold>
+        <Notification /> <TextTitle>Notification</TextTitle>
       </NavButton>
 
       <NavButton selected={selectedKey === "messages"}>
-        <Messages /> <TitleBold>Messages</TitleBold>
+        <Messages /> <TextTitle>Messages</TextTitle>
       </NavButton>
 
       <NavButton selected={selectedKey === "bookmarks"}>
-        <Bookmark /> <TitleBold>Bookmarks</TitleBold>
+        <Bookmark /> <TextTitle>Bookmarks</TextTitle>
       </NavButton>
 
       <NavButton selected={selectedKey === "lists"}>
-        <Lists /> <TitleBold>Lists</TitleBold>
+        <Lists /> <TextTitle>Lists</TextTitle>
       </NavButton>
 
       <NavButton selected={selectedKey === "profile"}>
-        <Profile /> <TitleBold>Profile</TitleBold>
+        <Profile /> <TextTitle>Profile</TextTitle>
       </NavButton>
 
       <NavButton selected={selectedKey === "more"}>
-        <More /> <TitleBold>More</TitleBold>
+        <More /> <TextTitle>More</TextTitle>
       </NavButton>
     </nav>
   );
