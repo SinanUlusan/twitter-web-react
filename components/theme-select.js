@@ -17,7 +17,7 @@ function ThemeSelect({}) {
   return (
     <div className={styles.container}>
       {["light", "dim", "dark"].map((theme) => (
-        <label key={theme} className={styles.label}>
+        <label key={theme} className={cn(styles.label)}>
           <input
             type="radio"
             value={theme}

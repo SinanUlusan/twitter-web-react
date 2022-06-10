@@ -15,6 +15,11 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
+    "/": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/index.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -25,15 +30,25 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/explore": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/explore.js"
+    ],
+    "/lists": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/lists.js"
+    ],
     "/more": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/more.js"
     ],
-    "/profile": [
+    "/notifications": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/profile.js"
+      "static/chunks/pages/notifications.js"
     ]
   },
   "ampFirstPages": []

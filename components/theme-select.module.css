@@ -1,16 +1,47 @@
 .container {
   padding: 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
 }
 
 .label {
   margin-right: 20px;
   display: inline-flex;
   align-items: center;
+  background: #000;
+  height: 100px;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+  font-size: 1.2em;
+  font-weight: 600;
 
   input[type="radio"] {
     font-size: 18px;
     width: 1em;
     height: 1em;
     margin-right: 6px;
+  }
+
+  &:nth-child(1) {
+    background-color: white !important;
+    color: #000;
+  }
+
+  &:nth-child(2) {
+    background-color: rgb(21, 32, 43) !important;
+    color: white;
+  }
+
+  &:nth-child(3) {
+    background-color: #000 !important;
+    color: white;
   }
 }

@@ -17,3 +17,7 @@
   height: 47px;
   min-width: 47px;
 }
+
+.light:hover {
+  color: white;
+}

@@ -7,7 +7,12 @@ import classNames from "classnames";
 function ThemeButton({ className, children, big = false, ...props }) {
   return (
     <Button
-      className={cn(styles.button, big && styles.bigButton, className)}
+      className={cn(
+        styles.button,
+        styles.light,
+        big && styles.bigButton,
+        className
+      )}
       {...props}
     >
       {children}
