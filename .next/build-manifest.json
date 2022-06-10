@@ -25,16 +25,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/bookmarks": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/bookmarks.js"
-    ],
-    "/lists": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/lists.js"
-    ],
     "/more": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
