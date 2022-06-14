@@ -1,26 +1,20 @@
 import React from "react";
+import useSWR from "swr";
 
 import Layout from "../components/layout";
+import fetcher from "../lib/fetch";
 import Tweet from "../components/tweet/index";
 
 function HomePage() {
+  const { data, error } = useSWR("/api/tweet", fetcher);
   return (
     <Layout>
-      <Tweet
-        name="Sinanis Scott"
-        slug="sinanisscott"
-        datetime={new Date("2022-05-3")}
-        text={`Umarım haklı çıkarsın ama hiç sanmyorum, 
-  
-umarım ben yanılıyorumdur ama dediğim gibi hiç sanmıyorum.`}
-      ></Tweet>
+      {error && <p>An error has occured</p>}
+      {!data && <p>Loading</p>}
 
-      <Tweet
-        name="Sinanis Scott"
-        slug="sinanisscott"
-        datetime={new Date("2022-04-3")}
-        text={`yurt disi gezilerime giderken sahip oldugum heyecan, yurtdisindan italya’ya donerken daha yuksek oluyor. lan italya ben seni nasil birakacagim? ikinci defa asik olma hissiyatini yasattin bana.`}
-      ></Tweet>
+      {data?.statuses.map((tweet) => {
+        return <Tweet key={tweet.id} {...tweet}></Tweet>;
+      })}
     </Layout>
   );
 }
