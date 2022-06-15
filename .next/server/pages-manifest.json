@@ -2,6 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/tweet": "pages/api/tweet.js",
-  "/": "pages/index.js"
+  "/profile": "pages/profile.js",
+  "/explore": "pages/explore.js",
+  "/more": "pages/more.js",
+  "/api/tweet": "pages/api/tweet.js"
 }

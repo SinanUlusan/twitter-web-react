@@ -1,11 +1,12 @@
 import React from "react";
-import styles from "./stack.module.css";
 import cn from "classnames";
 
-function Stack({ gap = 10, column = false, children }) {
+import styles from "./stack.module.css";
+
+function Stack({ gap = 10, column = false, children, className }) {
   return (
     <div
-      className={cn([styles.stack, column && styles.column])}
+      className={cn([styles.stack, column && styles.column, className])}
       style={{ "---gap": `${gap}px` }}
     >
       {children}
