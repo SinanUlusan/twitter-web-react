@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./col-sidebar.module.css";
 import cn from "classnames";
 
+import TabletTweetIcon from "./icons/TabletTweetIcon";
 import Navigation from "./navigation";
 import ThemeButton from "./theme-button";
 import ProfileBox from "./profile-box";
@@ -12,7 +13,7 @@ function Sidebar({ flat }) {
       <Navigation flat={flat} />
       <div className={styles.tweet}>
         <ThemeButton big full={!flat}>
-          {flat ? "a" : "Tweet"}
+          {flat ? <TabletTweetIcon /> : "Tweet"}
         </ThemeButton>
       </div>
       <div className={styles.profile}>
