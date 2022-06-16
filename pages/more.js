@@ -1,7 +1,7 @@
 import React from "react";
 
-import Layout from "../components/layout";
-import ThemeSelect from "../components/theme-select";
+import Layout from "../components/layout/index";
+import ThemeSelect from "../components/theme-select/index";
 
 function MorePage() {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
 import formatDistanceToNowStrict from "date-fns/formatDistanceToNowStrict";
 
-import Photo from "../photo";
+import Photo from "../photo/index";
 import styles from "./style.module.css";
-import IconButton from "../icon";
+import IconButton from "../button/icon";
 import * as Icon from "../icons";
 import { userEvent } from "@storybook/testing-library";
 

@@ -1,13 +1,13 @@
 import React from "react";
 import { withKnobs, boolean } from "@storybook/addon-knobs";
 
-import Button from "../components/button";
-import ThemeButton from "../components/theme-button";
-import Stack from "../components/stack";
-import NavButton from "../components/navigation-button";
-import Navigation from "../components/navigation";
+import Button from "../components/button/index";
+import ThemeButton from "../components/theme-button/index";
+import Stack from "../components/stack/index";
+import NavButton from "../components/navigation/button";
+import Navigation from "../components/navigation/index";
 import { Home } from "../components/icons";
-import TextTitle from "../components/text-title";
+import TextTitle from "../components/text/title";
 
 export default {
   title: "Buttons",

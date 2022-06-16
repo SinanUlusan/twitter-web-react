@@ -2,7 +2,7 @@ import React from "react";
 import useSWR from "swr";
 
 import styles from "./index.module.css";
-import Layout from "../components/layout";
+import Layout from "../components/layout/index";
 import fetcher from "../lib/fetch";
 import Tweet from "../components/tweet/index";
 import Loading from "../components/loading";
