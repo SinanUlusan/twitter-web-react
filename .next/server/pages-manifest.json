@@ -2,14 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/tweet": "pages/api/tweet.js",
   "/": "pages/index.js",
-  "/explore": "pages/explore.js",
-  "/notifications": "pages/notifications.js",
-  "/messages": "pages/messages.js",
-  "/bookmarks": "pages/bookmarks.js",
-  "/lists": "pages/lists.js",
-  "/profile": "pages/profile.js",
-  "/more": "pages/more.js",
+  "/api/tweet": "pages/api/tweet.js",
   "/api/new": "pages/api/new.js"
 }
