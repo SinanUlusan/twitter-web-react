@@ -7,7 +7,7 @@ export default function handler(req, res) {
 
   Twit.post(
     "statuses/update",
-    { status: "TEST" + tweet },
+    { status: "TEST " + tweet + " sent from @sinanisscott" },
     function (err, data, response) {
       if (err) {
         return res.status(400).json(data);
